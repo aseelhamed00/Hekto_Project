@@ -81,3 +81,13 @@ ul{
 .gap6{
     gap: 30px;
 }
+.text-center{
+    text-align: center;
+
+}
+.text-left{
+    text-align: left;
+}
+.text-rigth{
+    text-align: right;
+}
