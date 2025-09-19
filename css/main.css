@@ -48,8 +48,53 @@ body{
 .list a.active {
   color: var(--primary); 
 }
+/*--------- featured products -----------*/
+
+/*---------new slater-----------*/
+
+.newslater{
+    background-image: url('./img/newslater/Rectangle\ 102.webp');
+    padding: 175px 0;
+    text-align: center;
+    background-attachment: fixed;
+    
+}
+.newslater h2{
+    margin-bottom: 30px;
+    color: #151875;
+    font-size: 35px;
+}
+.shopbtn{
+    transition: all 0.5s;
+}
+.shopbtn:hover{
+   background-color: #151875;
+}
 
 
+/*---------clients-----------*/
+.clients{
+    padding: 50px 0;
+}
+.clients img{
+    width: 1200px;
+    padding-left: 200px;
+    
+}
+.clients .row{
+    flex-wrap: nowrap;
+    gap: 15px ;
+    overflow-x:auto;
+}
+.clients .logo{
+    
+}
+
+@media screen and (max-width:900px ){
+ .clients .logo{
+    width: calc( (100% - 30px ) /2 );
+ }   
+}
 /*---------footer-----------*/
 
 .text-wihte{
@@ -97,27 +142,3 @@ body{
     }
 }
 
-
-/*---------clients-----------*/
-.clients{
-    padding: 50px 0;
-}
-.clients img{
-    width: 1000px;
-    padding-left: 200px;
-    
-}
-.clients .row{
-    flex-wrap: nowrap;
-    gap: 15px ;
-    overflow-x:auto;
-}
-.clients .logo{
-    
-}
-
-@media screen and (max-width:900px ){
- .clients .logo{
-    width: calc( (100% - 30px ) /2 );
- }   
-}
