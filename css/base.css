@@ -91,3 +91,9 @@ ul{
 .text-rigth{
     text-align: right;
 }
+.text-primary{
+    color: var(--primary);
+}
+.text-secondary{
+    color: #151875
+}
