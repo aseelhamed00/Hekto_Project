@@ -9,6 +9,11 @@ body{
     flex-wrap: wrap;
     gap: 36px;
 }
+.click:hover a{
+    color: var(--primary);
+    text-decoration: underline; 
+
+}
 .bar{
     display: none;
 }
@@ -253,6 +258,111 @@ body{
  
 }
 
+.product .icons{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    display: flex;
+    gap: 15px;
+    display: none;
+    transition: all .6s;
+
+}
+.product:hover .icons{
+    display: flex;
+}
+
+.Detailsbtn button {
+    
+    background-color: #08D15F;   
+    color: white;                
+    border: 5px solid white;              
+    padding: 12px 20px;         
+    cursor: pointer;            
+    font-size: 16px;             
+    font-weight: 500;            
+    text-align: center;          
+    visibility: hidden; 
+    opacity: 0;        
+    transition: all 0.3s ;   
+}
+
+.Detailsbtn:hover button{
+ visibility: visible;
+    opacity: 1;
+}
+
+/*--------- Leatest products -----------*/
+.Leatest-products {
+    gap: 15px;
+
+}
+.Leatest-products h2{
+    padding: 40px;
+    color: #151875;
+}
+.L-product{
+    background-color: #F7F7F7;
+    width: calc((100% - 45px) / 3 ) ;
+    position: relative;
+    margin-bottom: 40px;
+}
+.top_info {
+    align-items: center;            
+    gap: 20px;                      
+}
+
+.L-list ul {
+    display: flex;          
+    gap: 50px;              
+    list-style: none; 
+    justify-content: center; 
+    padding: 20px ; 
+    color: #151875;    
+}
+.pink:hover a{
+    color: var(--primary);
+    text-decoration: underline; 
+
+}
+.L-icons{
+
+   position: absolute;
+    top: 120px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+    transition: all .6s;
+
+}
+.L-product:hover .L-icons{
+    display: flex;
+    
+}
+.L-product:hover {
+    background-color: white;
+    
+}
+.L-product  .centerline{
+    text-decoration: line-through;
+    color: #FB2448; 
+}
+.L-product_details{
+    color: #151875;
+    font-size: 16px;
+    background-color: white;
+    
+}
+.L-product_details .L-product-info{
+   
+    font-size: 14px;
+}
+.L-product_details .L-product-info .centerline{
+   
+    font-size: 12px;
+}
 
 /*---------new slater-----------*/
 
@@ -290,9 +400,7 @@ body{
     gap: 15px ;
     overflow-x:auto;
 }
-.clients .logo{
-    
-}
+
 
 @media screen and (max-width:900px ){
  .clients .logo{
