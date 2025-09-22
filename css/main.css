@@ -364,6 +364,103 @@ body{
     font-size: 12px;
 }
 
+@media (max-width: 768px) {
+  .L-product {
+    width: calc((100% - 15px) / 2); 
+  }
+
+  .Leatest-products h2 {
+    padding: 20px; 
+    font-size: 20px;
+  }
+
+  .L-list ul {
+    gap: 20px;      
+    flex-wrap: wrap; 
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .L-product {
+    width: 100%; 
+  }
+
+  .L-list ul {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+/*--------- shopex -----------*/
+.shopex {
+  padding: 60px 0;
+}
+.shopex h2{
+  margin-bottom: 30px;
+  color: #151875;
+}
+.shopex .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.shopex-item{
+  width: calc((100% - 45px)/4);   
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(21,24,117,0.08);
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;                  
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.shopex-item:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(21,24,117,0.12);
+}
+
+.shopex-item .img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px; height: 72px;
+  margin-bottom: 6px;
+}
+.shopex-item .img img{
+  width: 72px; height: 72px;
+  object-fit: contain;
+}
+.shopex-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.shopex-details h3{
+  font-size: 16px;
+  color: #151875;
+  margin: 0;
+}
+.shopex-details p{
+  font-size: 13px;
+  color: #ACABC3;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 992px){
+  .shopex-item{ width: calc((100% - 30px)/2); }
+}
+@media (max-width: 576px){
+  .shopex-item{ width: 100%; }
+}
+
+
 /*---------new slater-----------*/
 
 .newslater{
