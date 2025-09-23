@@ -459,7 +459,188 @@ body{
 @media (max-width: 576px){
   .shopex-item{ width: 100%; }
 }
+/*--------- sofa1 -----------*/
+.sofa{
+  padding: 30px 100px ;
+  background-color: #F1F0FF;
 
+}
+.sofa .row{
+  display: flex;
+  align-items: center;     
+  gap: 40px;
+}
+
+.sofa .img img{
+  max-width: 80%;
+  height: auto;
+  margin-left: 10%;
+}
+
+/*--------- trending products  -----------*/
+
+
+.trending-products {
+   padding: 50px 0;
+   }
+.trending-products h2 { 
+  margin-bottom: 30px; color: #1A0B5B; 
+}
+
+.trending-products .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center; 
+}
+
+.T-product{
+  flex: 0 0 calc((100% - 72px)/4);  
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px #00000040;
+  display: flex;
+  flex-direction: column;
+}
+
+.T-product .img{
+  height: 220px;                 
+  background: #F5F6F8;
+  display: grid;
+  place-items: center;
+}
+.T-product .img img{
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.T-product_details{
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.T-product_details h3{
+  color: #151875;
+  font-size: 14px;
+}
+
+.T-product-info{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+ 
+}
+.T-product-info .firstspan{ 
+  color: #151875;
+   font-size: 12px; 
+}
+.T-product-info .secondspan{
+  color: #ACABC3;
+   font-size: 10px;
+  
+}
+
+@media (max-width: 992px){
+  .T-product{ flex: 0 0 calc((100% - 24px)/2); }
+}
+@media (max-width: 576px){
+  .T-product{ flex: 0 0 100%; }
+}
+/*------------------------*/
+.trending-photos {
+   padding: 50px 0;
+   }
+
+.trending-photos .row {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;  
+}
+.trending-photos .row {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;  
+}
+
+.T-card-product {
+  flex: 1;                
+  display: flex;
+  flex-direction: column;
+}
+
+.T-card-product .img{
+  height: 220px;                 
+  display: grid;
+  place-items: center;
+}
+.T-card-product .img img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.T-card-product .colomdiv {
+
+  flex-direction: column;
+  
+}
+
+.T-card-product.colomdiv .img {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  height: auto;
+}
+.T-card-product.colomdiv .img img {
+  width: 80%;
+  height: 80px;         
+  background: #F5F6F8; 
+  border-radius: 6px;
+  padding: 8px;
+}
+/*--------- discounte sofa -----------*/
+.dis-sofa{
+  margin-bottom: 50px;
+  padding: 30px 100px ;
+
+}
+.dis-sofa h2{
+  color: #151875;
+  text-align: center;
+  font-size: 30px;
+
+}
+.dis-sofa .row{
+  display: flex;
+  align-items: center;     
+  gap: 40px;
+}
+
+.dis-sofa .img img{
+  max-width: 80%;
+  height: auto;
+  margin-left: 15%;
+}
+.S-list ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: center; 
+  padding: 20px;
+  font-size: 14px;
+}
+
+.S-list-item a { 
+  color: #151875; 
+  text-decoration: none; 
+}
 
 /*---------new slater-----------*/
 
